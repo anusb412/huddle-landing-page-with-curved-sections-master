@@ -1,0 +1,250 @@
+/* IMPORTING FONT
+########################### */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* CSS RESET
+########################### */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* DECLARING VARIABLES
+########################### */
+
+:root {
+    --clr-pink: hsl(322, 100%, 66%);
+    --clr-lightPink: hsl(321, 100%, 78%);
+    --clr-red: hsl(0, 100%, 63%);
+    --clr-darkCyan: hsl(192, 100%, 9%);
+    --clr-paleBlue: hsl(207, 100%, 98%);
+
+    font-family: "Poppin", "Open Sans";
+    --fw-400: 400;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  padding: 2rem;
+  display: grid;
+  place-items: center;
+  gap: 6rem;
+  text-align: center;
+  padding: 2rem;
+}
+
+.logo-top {
+  transform: scale(45%);
+}
+
+.try {
+  max-width: 100%;
+  height: 1.5rem;
+  font-size: .8rem;
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 30%;
+  background-color: white;
+  color: hsl(322, 100%, 66%);
+}
+
+.build {
+  font-size: 2rem;
+  font-weight: 700;
+  
+}
+
+.description {
+  font-size: .9rem;
+  text-align: center;
+  display: grid;
+}
+
+.started {
+  width: 80%;
+  height: 3rem;
+  font-size: .8rem;
+  border: 1px solid hsl(322, 100%, 66%);
+  border-radius: 4rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  margin: 0 auto;
+}
+
+.communitiesnum {
+  font-size: 3rem;
+  font-weight: 700;
+  display: grid;
+}
+
+.communities {
+  font-size: 1rem;
+}
+
+.messages-sent {
+  font-size: 3rem;
+  font-weight: 700;
+  display: grid;
+}
+
+.messages {
+  font-size: 1rem;
+}
+
+.ready-started {
+  display: grid;
+  gap: 2rem;
+}
+
+.ready {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.started-bottom {
+  border-radius: 4rem;
+  max-width: 60%;
+  height: 2.5rem;
+}
+
+.bottom-darkCyan {
+  display: grid;
+  gap: 2rem;
+  background-image:url(/images/bg-footer-top-mobile.svg) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.newsletter {
+  text-align: left;
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: grid;
+}
+
+.newletter-description {
+ text-align: left;
+ font-size: .9rem;
+ font-weight: 600;
+}
+
+.form1 {
+  max-width: 90%;
+}
+
+.subscribe {
+  align-items: right;
+  max-width: 60%;
+  border-radius: .2rem;
+  background-color: hsl(322, 100%, 66%);
+  color: white;
+  font-size: .9rem;
+  font-weight: 700;
+  display: grid;
+}
+
+.pnumber {
+  text-align: left;
+}
+
+.email {
+  text-align: left;
+}
+
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.fab {
+  padding: .5rem;
+}
+
+
+
+
+
+
